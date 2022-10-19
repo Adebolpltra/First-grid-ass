@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Grid Table</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        li{
+            color: white;
+            display: grid;
+            justify-items: center;
+            padding: 100px 0;
+        }
+
+        ul{
+            list-style: none;
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+            gap: 5px;
+            width: 40%;
+            align-content: center;
+            /* justify-content: center; */
+            height: 100vh;
+            margin: auto;
+            
+        }
+
+        .blue{
+            background-color: rgb(28, 98, 226);
+            grid-column: 1/4;
+            padding: 20px;
+            
+        }
+
+        .skyblue{
+            background-color: skyblue;                       
+        }
+
+        .black{
+            background-color: rgb(82, 82, 93);           
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="blue">Holy Grail Layout</li>
+        <li class="skyblue">Nav</li>
+        <li class="black">Main Content</li>
+        <li class="skyblue">Sidebar</li>
+        <li class="blue">Footer</li>
+    </ul>
+    
+</body>
+</html>
